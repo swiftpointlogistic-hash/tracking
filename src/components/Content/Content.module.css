@@ -1,0 +1,368 @@
+.trackBox {
+  /* padding: 1em; */
+  gap: 1em;
+  display: flex;
+  background-color: #edecec;
+  padding: 0.5em;
+  width: 50%;
+  border-radius: 7px;
+  justify-content: space-between;
+}
+.trackBox input {
+  border: none;
+  width: fit-content;
+  outline: none;
+  min-width: 65%;
+  padding: 1em;
+  background-color: transparent;
+}
+.trackingNum {
+  padding: 0 1em;
+  padding-top: 1em;
+  transform: translateY(-3em);
+  background-color: white;
+  padding: 3em;
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.15);
+  border-left: 8px solid#115373;
+  border-right: 8px solid#115373;
+  position: relative;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+  bottom: 8rem;
+}
+@media screen and (max-width: 740px) {
+  .trackBox {
+    width: 100%;
+  }
+  .trackingNum {
+    padding: 2em 1em;
+  }
+  .trackingNum h1 {
+    font-size: 20px !important;
+  }
+  .introa {
+    font-size: 30px !important;
+  }
+  .benefits h1 {
+    font-size: 30px !important;
+  }
+  .floatB {
+    flex-direction: column !important;
+    padding: 1em;
+  }
+  .leftB {
+    width: 100% !important;
+  }
+  .trackBox input {
+    width: 50%;
+  }
+  .trackingNum {
+    width: 90%;
+    margin: 0 auto;
+    transform: translateY(-6em);
+  }
+  .right .numbers p {
+    font-size: 13px !important;
+  }
+}
+.trackingNum h1 {
+  font-size: 25px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.line {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  /* justify-content: space-between; */
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 2em 0;
+}
+.left,
+.right {
+  width: 100%;
+}
+.text {
+  width: 40%;
+}
+.text h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #115373;
+}
+.text {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  width: 30%;
+}
+
+.right .numbers p {
+  font-size: 16px;
+  border-left: 2px solid #f8f8f8;
+  padding: 2em;
+  font-weight: 600;
+}
+.introa {
+  font-size: 40px;
+  font-weight: 700;
+  color: #115373;
+}
+.steps {
+  background-color: #115373;
+  color: white;
+  padding: 2em 0;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2em;
+  margin: 5em 0;
+  /* width: 50%; */
+  /* display: none; */
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2em;
+  position: relative;
+  background-color: #115373;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* display: block; */
+}
+.cardImage {
+  width: 60%;
+  height: 10em;
+  display: grid;
+  place-content: center;
+
+  margin: 0 auto;
+}
+.card h1 {
+  font-size: 25px;
+  font-weight: 600;
+  /* white-space: nowrap; */
+}
+.card p {
+  font-size: 18px;
+}
+.step {
+  text-align: center;
+  color: white;
+  /* border-radius: 5px; */
+  padding: 0.5em 2em;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+@media screen and (max-width: 760px) {
+  .cardTwo {
+    padding: 1em;
+  }
+  .boxes {
+    width: 100%;
+    gap: 2em 0;
+
+    box-sizing: border-box !important;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  .top {
+    width: 100% !important;
+    margin: 2em 0;
+  }
+  .top h1 {
+    font-size: 25px;
+  }
+  .steps {
+    padding: 2em 1em;
+  }
+  .card {
+    margin: 1em 0;
+    box-sizing: border-box;
+  }
+  .trackingNum span {
+    display: none;
+  }
+  .text h1 {
+    font-size: 30px;
+  }
+}
+.toph1 {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+}
+.topp {
+  font-size: 17px;
+  margin: 1em 0;
+}
+.top {
+  width: 100%;
+  margin: 2em 0;
+}
+
+.cardDeck {
+  box-sizing: border-box;
+  /* width: 100%; */
+  /* background: red; */
+  height: 400px;
+  position: relative;
+}
+.cardDeck:nth-child(1) img,
+.cardDeck:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.cardDeck:nth-child(1) h1,
+.cardDeck:nth-child(2) h1 {
+  position: absolute;
+  bottom: 5%;
+  color: white;
+  left: 5%;
+  font-size: 20px;
+  font-weight: 700;
+}
+.cardDeck:nth-child(1)::before,
+.cardDeck:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(4, 33, 62, 0) 0, #115373 100%);
+  /* background: red; */
+}
+.cardDeck:nth-child(1)::after,
+.cardDeck:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /* background: linear-gradient(180deg, rgba(4, 33, 62, 0) 0, #04213e 100%); */
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  padding: 2em;
+  font-size: 20px;
+}
+.cardDeck:nth-child(2):hover::after {
+  background: #115373;
+  content: "Guaranteed express, parcel deliver anywhere in the country via our courier service";
+}
+.cardDeck:nth-child(1):hover::after {
+  background: #115373;
+
+  content: "Swiftpoint  makes international shipping wasy thanks to accurate tracking and reliable delivery around the world.";
+}
+.cardDeck:nth-child(3) {
+  background-color: #115373;
+  display: grid;
+  place-content: center;
+  padding: 2em;
+  text-align: center;
+  gap: 2em;
+  font-size: 20px;
+  color: white;
+}
+.cardDeck:nth-child(3) button {
+  background-color: white;
+  color: #115373;
+  border: none;
+  padding: 1em;
+  width: fit-content;
+  margin: 2px auto;
+  border-radius: 5px;
+  font-size: 20px;
+  font-size: 14px !important;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #115373;
+}
+.cardDeck:nth-child(3) button:hover {
+  background-color: #115373;
+  color: white;
+  border: 1px solid white;
+  transition: all;
+}
+
+.cardDeck:nth-child(3) h1 {
+  font-weight: 600;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.benefits h1 {
+  font-size: 40px;
+  color: #115373;
+  font-weight: 800;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.bp {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+.floatB {
+  display: flex;
+  margin: 1em 0;
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
+}
+.leftB img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.leftB {
+  width: 80%;
+}
+.rightB {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.rightB h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #115373;
+}
+.rightB p {
+  font-size: 18px;
+}
+.floatBT {
+  flex-direction: row-reverse;
+}
