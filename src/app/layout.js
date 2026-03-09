@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={inter.className}>
         <ShipmentProvider>{children}</ShipmentProvider>
-    <Script id="chatway" async={true} src="https://cdn.chatway.app/widget.js?id=8JCHPuDiaGcl"></Script>
+    <Script id="chatway" async={true} src="https://cdn.chatway.app/widget.js?id=ito3ejMrzvgZ"></Script>
       </body>
     </html>
   );
