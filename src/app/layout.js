@@ -3,7 +3,7 @@ import Head from "next/head";
 import "./globals.css";
 import { ShipmentProvider } from "@/contexts/ShipmentContext";
 import Navbar from "@/components/Navbar/Navbar";
-import Script from 'next/script';
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +25,11 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={inter.className}>
         <ShipmentProvider>{children}</ShipmentProvider>
-    <Script id="chatway" async={true} src="https://cdn.chatway.app/widget.js?id=ito3ejMrzvgZ"></Script>
+
+        <Script
+          src="https://embed.tawk.to/69b10d115dd92a1c35ae2b39/1jjdpm3m8"
+          async
+        ></Script>
       </body>
     </html>
   );
