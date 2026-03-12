@@ -27,10 +27,12 @@ export default function RootLayout({ children }) {
         <ShipmentProvider>{children}</ShipmentProvider>
 
         <Script
-          src="https://embed.tawk.to/69b10d115dd92a1c35ae2b39/1jjdpm3m8"
+          src="https://embed.tawk.to/69b22226801efb1c38c6c4d3/1jjftapt6"
           async
         ></Script>
       </body>
     </html>
   );
 }
+
+
